@@ -1,0 +1,261 @@
+﻿/*--------------lubySelector start------------------*/
+.lubySelector {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 18px;
+    background: #555555;
+    text-align: center;
+    margin: 7px 5px;
+    cursor: pointer;
+    border: 1px solid #111111;
+    transition: background 0.2s, opacity 0.2s;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+    .lubySelector > select{
+        display: none;
+        left: -100%;
+        position: fixed;
+    }
+    .lubySelector:hover{
+        background: #666666;
+    }
+    .lubySelector.open{
+        background: #333333;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+    }
+
+.lubySelector .global_icon {
+    width: 10px;
+    height: 30px;
+    line-height: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    left: 8px;
+    top: 2px;
+}
+
+    .global_icon i {
+        font-size: 21px !important;
+        vertical-align: middle !important;
+        margin-top: -4px !important;
+    }
+
+.lubySelector .ls_label {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lubySelector .ls_arrow{
+    width: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+
+.lubySelector .ls_search{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ffffff;
+}
+    .lubySelector .ls_search .ls_input{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-size: 14px;
+        color: #ffffff;
+        margin: 0;
+        padding: 7px;
+        padding-right: 23px;
+        border: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        resize: none;
+        overflow: hidden;
+    }
+
+    .lubySelector .ls_search .fa-search{
+        font-size: 14px;
+        color: #ffffff;
+        position: absolute;
+        top: 8px;
+        right: 6px;
+        cursor: default;
+    }
+
+.lubySelector .ls_optionWrap {
+    width: 100%;
+
+    text-align: center;
+    text-shadow: none;
+    position: absolute;
+
+    overflow-y: auto;
+    z-index: 4;
+    display: block;
+    border: 1px solid #111111;
+    background: #333333;
+    margin-top: 2px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.8);
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+    .lubySelector .ls_option {
+        width: 100%;
+        display: block;
+        background: #333333;
+        color:#aaaaaa;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden
+    }
+        .ls_option a {
+            color: #999999;
+        }
+        .ls_option .tooltip img {
+            width: 400px;
+            height: 300px;
+            margin: 5px 0px;
+            vertical-align: middle;
+        }
+        .ls_option:hover {
+            color: #ffffff;
+        }
+        .ls_option.selected {
+            font-weight: 600 !important;
+            color: #48cfad !important;
+        }
+
+    .optGroup{
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        border-bottom: 1px solid #aaaaaa;
+        border-radius: 0px;
+        cursor: default;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        margin: 0px 10px;
+    }
+/*--------------lubySelector end------------------*/
+/*--------------      theme     ------------------*/
+.lubySelector.white {
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    color: #444444;
+}
+    .lubySelector.white:hover {
+        background: #eeeeee;
+    }
+    .lubySelector.white .ls_arrow {
+        color: #444444;
+    }
+    .lubySelector.white .global_icon {
+        color: #444444;
+    }
+    .lubySelector.white .ls_optionWrap {
+        background: #ffffff;
+        border: 1px solid #aaaaaa;
+        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+    }
+    .lubySelector.white .ls_option {
+        background: #ffffff;
+        color: #444444;
+    }
+        .lubySelector.white .ls_option:hover {
+            opacity: 0.7;
+        }
+    .lubySelector.white .ls_search .ls_input {
+        color: #444444;
+    }
+    .lubySelector.white .ls_search .fa-search {
+        color: #444444;
+    }
+.lubySelector.ghost {
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+    .lubySelector.ghost:hover {
+        opacity: 0.7;
+    }
+    .lubySelector.ghost .ls_optionWrap {
+        background: rgba(0,0,0,0.85);
+    }
+    .lubySelector.ghost .ls_option {
+        background: transparent;
+    }
+        .lubySelector.ghost .ls_option:hover {
+            opacity: 0.7;
+        }
+.lubySelector.transparent {
+    background: transparent;
+    border: none;
+}
+    .lubySelector.ghost:hover {
+        opacity: 0.7;
+    }
+    .lubySelector.ghost .ls_optionWrap {
+        background: rgba(0,0,0,0.85);
+    }
+    .lubySelector.ghost .ls_option {
+        background: transparent;
+    }
+        .lubySelector.ghost .ls_option:hover {
+            opacity: 0.7;
+        }
+.lubySelector.rect {
+    background: #222222;
+    border: none;
+    border-left: 1px solid #000000;
+    box-shadow: -1px 0px 0px #303030;
+    margin: 0px 0px 0px 1px;
+    padding: 0px 10px;
+}
+    .lubySelector.rect:hover {
+        background: #333333;
+    }
+    .lubySelector.rect .ls_arrow {
+        right: 20px;
+    }
+    .lubySelector.rect .global_icon {
+        left: 18px;
+    }
+    .lubySelector.rect .ls_optionWrap {
+        background: rgba(0,0,0,0.85);
+        margin-top: -16px;
+        margin-left: -10px;
+        box-shadow: 0px 9px 30px 0px rgba(0,0,0,0.8);
+    }
+    .lubySelector.rect .ls_option {
+        background: transparent;
+    }
+        .lubySelector.rect .ls_option:hover {
+            color: #ffffff;
+        }
